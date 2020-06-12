@@ -642,9 +642,9 @@ section {
   padding: 40px 0 0 0;
 }
 
-.about .icon-boxes h3 {
-  font-size: 28px;
-  font-weight: 700;
+.about .icon-boxes h2 {
+  font-size: 24px;
+  font-weight: 600;
   color: #010483;
   margin-bottom: 15px;
 }
