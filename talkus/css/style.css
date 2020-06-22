@@ -28,7 +28,7 @@ h1{
 
 .nav-link{
     font-size: 1.3rem;
-    font-family: 'Montserrat-light';
+    font-family: "Poppins", sans-serif;
 }
 
 .image{
@@ -60,4 +60,17 @@ p{
     text-align: center;
     font-family: 'Open-Sans';
     font-size: 20px;
+}
+
+.btn{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #04047a;
 }

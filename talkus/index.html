@@ -24,26 +24,26 @@
         <div class="container d-flex align-items-center">
 
             <div class="logo mr-auto">
-                <h1 class="text-light"><a href="index.html"><span>TechPundit</span></a></h1>
+                <h1 class="text-light"><a href="../index.html"><span>TechPundit</span></a></h1>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li class="active"><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li class="drop-down"><a href="">Get in touch</a>
+                    <li class="active"><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#features">Features</a></li>
+                    <li><a href="../index.html#gallery">Gallery</a></li>
+                    <li><a href="../index.html#team">Team</a></li>
+                    <li><a href="../index.html#pricing">Pricing</a></li>
+                    <li class="drop-down"><a href="index.html">Get in touch</a>
                         <ul>
                             <li><a href="#">Get quotation</a></li>
-                            <li class="drop-down"><a href="Track/index.html">Track my project</a>
+                            <li class="drop-down"><a href="../Track/index.html">Track my project</a>
                         </ul>
                     </li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
 
                 </ul>
             </nav>
@@ -91,7 +91,7 @@
       </div>
     </section>-->
       <!---tab list-->
- <ul class="nav nav-tabs" id="myTab" role="tablist">
+ <ul class="nav nav-tabs visible-phone" id="myTab" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" id="Quotation-tab" data-toggle="tab" href="#Quotation" role="tab" aria-controls="Quotation" aria-selected="true">Request Quotation</a>
   </li>
@@ -161,7 +161,7 @@
       <div class="row">
         <div class="col-lg-6">
           <h1>Request Project</h1>
-          <form>
+          <form action="" method="POST">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="t1">Name</label>
@@ -230,8 +230,8 @@
                 <input type="text" class="form-control" id="t13">
               </div>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg"><i class="fa fa-paper-plane" aria-hidden="true">
-              Submit</i></button>
+            <button type="submit" name="submit" class="btn btn-primary btn-lg">
+              Submit</button>
           </form>
   
         </div>
