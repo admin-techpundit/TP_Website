@@ -64,18 +64,18 @@
     </header>
 
       <!---tab list-->
- <ul class="nav nav-tabs visible-phone" id="myTab" role="tablist">
+ <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" id="Quotation-tab" data-toggle="tab" href="#Quotation" role="tab" aria-controls="Quotation" aria-selected="true">Request Quotation</a>
+    <a class="nav-link active" id="Quotation-tab" data-toggle="tab" href="#Quotation" role="tab" aria-controls="Quotation" aria-selected="true"  data-toggle="tab">Request Quotation</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="Project-tab" data-toggle="tab" href="#Project" role="tab" aria-controls="Project" aria-selected="false">Request Project</a>
+    <a class="nav-link" id="Project-tab" data-toggle="tab" href="#Project" role="tab" aria-controls="Project" aria-selected="false" data-toggle="tab">Request Project</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="Query-tab" data-toggle="tab" href="#Query" role="tab" aria-controls="Query" aria-selected="false">General Query</a>
+    <a class="nav-link" id="Query-tab" data-toggle="tab" href="#Query" role="tab" aria-controls="Query" aria-selected="false" data-toggle="tab">General Query</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="Workshop-tab" data-toggle="tab" href="#Workshop" role="tab" aria-controls="Workshop" aria-selected="false">Workshop</a>
+    <a class="nav-link" id="Workshop-tab" data-toggle="tab" href="#Workshop" role="tab" aria-controls="Workshop" aria-selected="false" data-toggle="tab">Workshop</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
@@ -337,6 +337,11 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-  
+    <script src="https://cdn.rawgit.com/InventPartners/bootstrap-responsive-tabs/master/jquery.responsivetabs.js"></script>
+    <script>
+    $(function() {
+      $('.nav-tabs').responsiveTabs();
+    });
+  </script>
   </body>
 </html>
