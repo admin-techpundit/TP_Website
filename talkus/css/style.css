@@ -45,7 +45,8 @@ h1{
 
 #myTab{
     padding-left: 5rem;
-    padding-right: 5rem ;
+    padding-right: 5rem;
+    
 }
 
 h2{
@@ -73,4 +74,14 @@ p{
     transition: 0.5s;
     color: #fff;
     background: #04047a;
+}
+
+@media (min-width :1028){
+    .navbar{
+        padding: 0;
+    }
+    .nav-item{
+        padding: 5px;
+    }
+   
 }
