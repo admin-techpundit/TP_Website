@@ -38,12 +38,6 @@ h1{
    margin-right : 10rem; 
 }
 
-.Workshopimg{
-    width: 800px;
-    height:400px;
-    margin-top: auto;
-    margin-right: auto;
-}
 
 .nav-tabs{
     color: #0000e6;
@@ -80,7 +74,8 @@ p{
     border-radius: 50px;
     transition: 0.5s;
     color: #fff;
-    background: #04047a;
+    background: #1acc8d;
+    margin-top: 30px;
 }
 
 @media (min-width :1028){

@@ -29,32 +29,30 @@
         <div class="container d-flex align-items-center">
 
             <div class="logo mr-auto">
-              <h1 class="text-light"><a href="index.html"><span>&ltTechPundit/&gt</span></a></h1>
+              <h1 class="text-light"><a href="../index.html"><span>&ltTechPundit/&gt</span></a></h1>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
 
             <nav class="nav-menu d-none d-lg-block">
-                <ul>
-                    <li class="active"><a href="../index.html#home">Home</a></li>
-                    <li><a href="../index.html#about">About</a></li>
-                    <li><a href="../index.html#features">Features</a></li>
-                    <li><a href="../index.html#gallery">Gallery</a></li>
-                    <li><a href="../index.html#pricing">Pricing</a></li>
-                    <li class="drop-down"><a href="index.html">Get in touch</a>
-                        <ul>
-                            <li><a href="#">Get quotation</a></li>
-                            <li class="drop-down"><a href="../Track/index.html">Track my project</a>
-                        </ul>
-                    </li>
-                    <li><a href="../index.html#contact">Contact</a></li>
-
-                </ul>
+              <ul>
+                <li class="active"><a href="../index.html#header">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#features">Services</a></li>
+                <li><a href="../index.html#gallery">Gallery</a></li>
+                <li><a href="../index.html#pricing">Pricing</a></li>
+                <li><a href="../index.html#letstalk">Let's talk</a></li>
+                <li><a href="../index.html#contact">Contact </a></li>
+                <li class="drop-down"><a href="">Get in Touch</a>
+                  <ul>
+                    <li><a href="talkus/index.html">Get Quotation</a></li>
+                    <li><a href="Track/index.html">Track my Project</a></li>
+                  </ul>
+                </li>
+              </ul>
             </nav>
-            <!-- .nav-menu -->
-
         </div>
-    </header>
+      </header>
 
       <!---tab list-->
  <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -81,26 +79,26 @@
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="t1">Name</label>
-                <input type="text" class="form-control" id="t1">
+                <input type="text" class="form-control" id="t1" required>
               </div>
               <div class="form-group col-md-6">
                 <label for="t2">Email</label>
-                <input type="email" class="form-control" id="t2">
+                <input type="email" class="form-control" id="t2" required>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="t3">Phone number</label>
-                <input type="text" class="form-control" id="t3">
+                <input type="text" class="form-control" id="t3" required>
               </div>
               <div class="form-group col-md-6">
                 <label for="t4">Project Name</label>
-                <input type="email" class="form-control" id="t4">
+                <input type="email" class="form-control" id="t4" required>
               </div>
             </div>
             <div class="form-group">
               <label for="t5">Project Description</label>
-              <input type="text" class="form-control" id="t5" placeholder="">
+              <input type="text" class="form-control" id="t5" placeholder="" required>
             </div>
             <div class="form-row">
               <div class="form-group col-md-8">
@@ -108,6 +106,8 @@
                 <select id="inputState" class="form-control">
                   <option selected>Web Site</option>
                   <option>Android Application</option>
+                  <option>IOT</option>
+                  <option>Embedded System</option>
                 </select>
               </div>
               <div class="form-group col-md-4">
@@ -115,7 +115,7 @@
                 <input type="file" class="form-control" id="t7">
               </div>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            <button type="submit" class="btn btn-lg">Submit</button>
           </form>
   
         </div>
@@ -144,7 +144,7 @@
             <div class="form-row">
               <div class="form-group col-md-8">
                 <label for="t3">Address</label>
-                <input type="text" class="form-control" id="t3" placeholder="1234 Main St" required>
+                <input type="text" class="form-control" id="t3" placeholder="" required>
               </div>
               <div class="form-group col-md-4">
                 <label for="t4">Phone Number</label>
@@ -165,13 +165,17 @@
             <div class="form-row">
               <div class="form-group col-md-4">
                 <label for="t7">Project Name</label>
-                <input type="text" class="form-control" id="t7">
+                <input type="text" class="form-control" id="t7" required>
               </div>
               <div class="form-group col-md-4">
                 <label for="t8">Domain of the project</label>
                 <select id="t8" class="form-control">
                   <option selected>website</option>
                   <option>Application</option>
+                  <option>IOT</option>
+                  <option>Embedded System</option>
+                  <option>ML Project</option>
+                  <option>Other</option>
                 </select>
               </div>
               <div class="form-group col-md-4">
@@ -182,24 +186,16 @@
             <div class="form-group">
               <div class="form-group">
                 <label for="t10">Project Description</label>
-                <input type="text" class="form-control" id="t10">
+                <input type="text" class="form-control" id="t10" required>
               </div>
             </div>
-            <div class="form-row">
-              <div class="form-group col-md-4">
+            <div class="form-group">
+              <div class="form-group">
                 <label for="t11">Team Name</label>
-                <input type="text" class="form-control" id="t11">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="t12">Team Leader's Name</label>
-                <input type="text" class="form-control" id="t12">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="t13">Member Details</label>
-                <input type="text" class="form-control" id="t13">
+                <input type="text" class="form-control" id="t11" required>
               </div>
             </div>
-            <button type="submit" name="submit" class="btn btn-primary btn-lg">
+            <button type="submit" name="submit" class="btn btn-lg">
               Submit</button>
           </form>
   
@@ -219,30 +215,20 @@
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="t1">Name</label>
-                  <input type="text" class="form-control" id="t1">
+                  <input type="text" class="form-control" id="t1" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="t2">Email</label>
-                  <input type="email" class="form-control" id="t2">
+                  <input type="email" class="form-control" id="t2" required>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="t3">Phone number</label>
-                  <input type="text" class="form-control" id="t3">
+                  <input type="text" class="form-control" id="t3" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="t4">Project Name</label>
-                  <input type="email" class="form-control" id="t4">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="t5">Project Description</label>
-                <input type="text" class="form-control" id="t5" placeholder="">
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="t6">Domain of the project</label>
+                  <label for="t6">Domain of the Query</label>
                   <select id="inputState" class="form-control">
                     <option selected>Web Site</option>
                     <option>Android Application</option>
@@ -252,7 +238,11 @@
                   </select>
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              <div class="form-group">
+                <label for="t5">Query/Message</label>
+                <input type="text" class="form-control" id="t5" placeholder="" required>
+              </div>
+              <button type="submit" class="btn btn-lg">Submit</button>
             </form>
     
           </div>
@@ -271,43 +261,57 @@
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="t1">Name</label>
-                  <input type="text" class="form-control" id="t1">
+                  <input type="text" class="form-control" id="t1" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="t2">Email</label>
-                  <input type="email" class="form-control" id="t2">
+                  <input type="email" class="form-control" id="t2" required>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="t3">Workshop Topic</label>
-                  <input type="text" class="form-control" id="t1">
+                  <select id="inputState" class="form-control">
+                    <option selected>Android Development</option>
+                    <option>Web Development</option>
+                    <option>Python Programing</option>
+                    <option>Machine Learning</option>
+                    <option>Others</option>
+                  </select>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="t4">Number Of Days</label>
-                  <input type="text" class="form-control" id="t2">
+                  <input type="text" class="form-control" id="t2" required>
                 </div>
               </div>
-              <div class="form-row">
-                <label for="t5">College Address</label>
-                <input type="text" class="form-control" id="t5" placeholder="">
+              <div class="form-group">
+                <label for="t5">College Name</label>
+                <input type="text" class="form-control" id="t5" placeholder="" required>
+              </div>
+              <div class="form-group">
+                <label for="t6">College Address</label>
+                <input type="text" class="form-control" id="t6" placeholder="" required>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <label for="t6">Phone Number</label>
-                  <input type="text" class="form-control" id="t1">
+                  <label for="t7">Phone Number</label>
+                  <input type="text" class="form-control" id="t7" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="t7">Number Of Students</label>
-                  <input type="text" class="form-control" id="t2">
+                  <label for="t8">Number Of Students</label>
+                  <input type="text" class="form-control" id="t8" required>
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              <div class="form-group">
+                <label for="t9">Other</label>
+                <input type="text" class="form-control" id="t9" placeholder="">
+              </div>
+              <button type="submit" class="btn btn-lg">Submit</button>
             </form>
     
           </div>
           <div class="col-lg-6">
-            <img src="image/WORKSHOP.png" class="Workshopimg" alt="">
+            <img src="image/WORKSHOP.png" class="image" alt="">
           </div>
         </div>
     </div>
