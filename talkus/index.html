@@ -81,35 +81,35 @@
       <div class="row">
         <div class="col-lg-6">
           <h1>Request Quotation</h1>
-          <form>
+          <form action="get_quote.php" method="POST">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="t1">Name</label>
-                <input type="text" class="form-control" id="t1" required>
+                <input type="text" class="form-control" name="t1" required>
               </div>
               <div class="form-group col-md-6">
                 <label for="t2">Email</label>
-                <input type="email" class="form-control" id="t2" required>
+                <input type="email" class="form-control" name="t2" required>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="t3">Phone number</label>
-                <input type="text" class="form-control" id="t3" required>
+                <input type="text" class="form-control" name="t3" required>
               </div>
               <div class="form-group col-md-6">
                 <label for="t4">Project Name</label>
-                <input type="email" class="form-control" id="t4" required>
+                <input type="text" class="form-control" name="t4" required>
               </div>
             </div>
             <div class="form-group">
               <label for="t5">Project Description</label>
-              <input type="text" class="form-control" id="t5" placeholder="" required>
+              <input type="text" class="form-control" name="t5" placeholder="" required>
             </div>
             <div class="form-row">
               <div class="form-group col-md-8">
                 <label for="t6">Domain of the project</label>
-                <select id="inputState" class="form-control">
+                <select id="inputState" name="t6" class="form-control">
                   <option selected>Web Site</option>
                   <option>Android Application</option>
                   <option>IOT</option>
@@ -118,10 +118,10 @@
               </div>
               <div class="form-group col-md-4">
                 <label for="t7">Attachment</label>
-                <input type="file" class="form-control" id="t7">
+                <input type="file" class="form-control" name="t7">
               </div>
             </div>
-            <button type="submit" class="btn btn-lg">Submit</button>
+            <button type="submit" name="submit" class="btn btn-lg">Submit</button>
           </form>
   
         </div>
@@ -136,46 +136,46 @@
       <div class="row">
         <div class="col-lg-6">
           <h1>Request Project</h1>
-          <form action="" method="POST">
+          <form action="request_project.php" method="POST">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="t1">Name</label>
-                <input type="text" class="form-control" id="t1" required>
+                <input type="text" class="form-control" name="t1" required>
               </div>
               <div class="form-group col-md-6">
                 <label for="t2">Email</label>
-                <input type="email" class="form-control" id="t2" required>
+                <input type="email" class="form-control" name="t2" required>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group col-md-8">
                 <label for="t3">Address</label>
-                <input type="text" class="form-control" id="t3" placeholder="" required>
+                <input type="text" class="form-control" name="t3" placeholder="" required>
               </div>
               <div class="form-group col-md-4">
                 <label for="t4">Phone Number</label>
-                <input type="text" class="form-control" id="t4" required>
+                <input type="text" class="form-control" name="t4" required>
               </div>  
             </div>
             
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="t5">Collage/organization Name</label>
-                <input type="text" class="form-control" id="t5" required>
+                <input type="text" class="form-control" name="t5" required>
               </div>
               <div class="form-group col-md-6">
                 <label for="t6">Department Name</label>
-                <input type="text" class="form-control" id="t6" required>
+                <input type="text" class="form-control" name="t6" required>
               </div>
             </div>
             <div class="form-row">
               <div class="form-group col-md-4">
                 <label for="t7">Project Name</label>
-                <input type="text" class="form-control" id="t7" required>
+                <input type="text" class="form-control" name="t7" required>
               </div>
               <div class="form-group col-md-4">
                 <label for="t8">Domain of the project</label>
-                <select id="t8" class="form-control">
+                <select name="t8" class="form-control">
                   <option selected>website</option>
                   <option>Application</option>
                   <option>IOT</option>
@@ -186,19 +186,19 @@
               </div>
               <div class="form-group col-md-4">
                 <label for="t9">Attachment</label>
-                <input type="file" class="form-control" id="t9">
+                <input type="file" class="form-control" name="t9">
               </div>
             </div>
             <div class="form-group">
               <div class="form-group">
                 <label for="t10">Project Description</label>
-                <input type="text" class="form-control" id="t10" required>
+                <input type="text" class="form-control" name="t10" required>
               </div>
             </div>
             <div class="form-group">
               <div class="form-group">
                 <label for="t11">Team Name</label>
-                <input type="text" class="form-control" id="t11" required>
+                <input type="text" class="form-control" name="t11" required>
               </div>
             </div>
             <button type="submit" name="submit" class="btn btn-lg">
@@ -217,25 +217,25 @@
         <div class="row">
           <div class="col-lg-6">
             <h1>General Query</h1>
-            <form>
+            <form action="query.php" method="POST">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="t1">Name</label>
-                  <input type="text" class="form-control" id="t1" required>
+                  <input type="text" class="form-control" name="t1" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="t2">Email</label>
-                  <input type="email" class="form-control" id="t2" required>
+                  <input type="email" class="form-control" name="t2" required>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="t3">Phone number</label>
-                  <input type="text" class="form-control" id="t3" required>
+                  <input type="text" class="form-control" name="t3" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="t6">Domain of the Query</label>
-                  <select id="inputState" class="form-control">
+                  <label for="t4">Domain of the Query</label>
+                  <select id="inputState" name="t4" class="form-control">
                     <option selected>Web Site</option>
                     <option>Android Application</option>
                     <option>Workshop</option>
@@ -246,9 +246,9 @@
               </div>
               <div class="form-group">
                 <label for="t5">Query/Message</label>
-                <input type="text" class="form-control" id="t5" placeholder="" required>
+                <input type="text" class="form-control" name="t5" placeholder="" required>
               </div>
-              <button type="submit" class="btn btn-lg">Submit</button>
+              <button type="submit" name="submit" class="btn btn-lg">Submit</button>
             </form>
     
           </div>
@@ -263,21 +263,21 @@
         <div class="row">
           <div class="col-lg-6">
             <h1>Workshop</h1>
-            <form>
+            <form action="workshop.php" method="POST">
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="t1">Name</label>
-                  <input type="text" class="form-control" id="t1" required>
+                  <input type="text" class="form-control" name="t1" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="t2">Email</label>
-                  <input type="email" class="form-control" id="t2" required>
+                  <input type="email" class="form-control" name="t2" required>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="t3">Workshop Topic</label>
-                  <select id="inputState" class="form-control">
+                  <select id="inputState" name="t3" class="form-control">
                     <option selected>Android Development</option>
                     <option>Web Development</option>
                     <option>Python Programing</option>
@@ -287,32 +287,32 @@
                 </div>
                 <div class="form-group col-md-6">
                   <label for="t4">Number Of Days</label>
-                  <input type="text" class="form-control" id="t2" required>
+                  <input type="text" class="form-control" name="t4" required>
                 </div>
               </div>
               <div class="form-group">
                 <label for="t5">Other Topic</label>
-                <input type="text" class="form-control" id="t5" placeholder="">
+                <input type="text" class="form-control" name="t5" placeholder="">
               </div>
               <div class="form-group">
                 <label for="t6">College Name</label>
-                <input type="text" class="form-control" id="t6" placeholder="" required>
+                <input type="text" class="form-control" name="t6" placeholder="" required>
               </div>
               <div class="form-group">
                 <label for="t7">College Address</label>
-                <input type="text" class="form-control" id="t7" placeholder="" required>
+                <input type="text" class="form-control" name="t7" placeholder="" required>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="t8">Phone Number</label>
-                  <input type="text" class="form-control" id="t8" required>
+                  <input type="text" class="form-control" name="t8" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="t9">Number Of Students</label>
-                  <input type="text" class="form-control" id="t9" required>
+                  <input type="text" class="form-control" name="t9" required>
                 </div>
               </div>
-              <button type="submit" class="btn btn-lg">Submit</button>
+              <button type="submit" name="submit" class="btn btn-lg">Submit</button>
             </form>
     
           </div>
