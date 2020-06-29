@@ -17,10 +17,21 @@ if(isset($_POST['submit']))
       //Insert Query of SQL
       $sql = "INSERT INTO workshop (name,email,topic,no_of_days,other_topic,clg_name,clg_addr,ph_no,no_of_student) VALUES ('$name','$email','$topic','$no_of_days','$other_topic','$clg_name','$clg_addr','$mobile','$no_of_student')";
       mysqli_query($conn,$sql);
-      echo "<br/><br/><span>Data Inserted successfully...!!</span>";
+      ?>
+      <script>
+          alert("Data Inserted successfully...!!");
+          document.location="index.html";
+      </script>
+    <?php
       }
       else{
-      echo "<p>Insertion Failed <br/> Some Fields are Blank....!!</p>";
+          ?>
+          <script>
+              alert(" Some Fields are Blank....!!")
+              document.location="index.html";
+          </script>
+
+      <?php
       }
      mysqli_close($conn);
 }

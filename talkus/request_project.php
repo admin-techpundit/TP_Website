@@ -19,10 +19,22 @@ if(isset($_POST['submit']))
       //Insert Query of SQL
       $sql = "INSERT INTO request_project (name,email,address,ph_no,clg_name,dept_name,pro_name,domain,attachment,pro_des,team_name) VALUES ('$name','$email','$address','$mobile','$clg_name','$dept_name','$pro_name','$domain','$attachment','$pro_des','$team_name')";
       mysqli_query($conn,$sql);
-      echo "<br/><br/><span>Data Inserted successfully...!!</span>";
+      //echo "<br/><br/><span></span>";
+      ?>
+      <script>
+          alert("Data Inserted successfully...!!");
+          document.location="index.html";
+      </script>
+      <?php
       }
       else{
-      echo "<p>Insertion Failed <br/> Some Fields are Blank....!!</p>";
+     ?>
+     <script>
+          alert("Insertion Failed.. Some Fields are Blank....!!");
+          document.location="index.html";
+     </script>
+     <?php
+     
       }
      mysqli_close($conn);
 }

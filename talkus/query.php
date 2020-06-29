@@ -13,10 +13,20 @@ if(isset($_POST['submit']))
       //Insert Query of SQL
       $sql = "INSERT INTO general_query (name,email,ph_no,domain,query) VALUES ('$name','$email','$mobile','$domain','$query')";
       mysqli_query($conn,$sql);
-      echo "<br/><br/><span>Data Inserted successfully...!!</span>";
-      }
+      ?>
+      <script>
+          alert("Data Inserted successfully...!!");
+          document.location="index.html";
+      </script>
+     <?php
+     }
       else{
-      echo "<p>Insertion Failed <br/> Some Fields are Blank....!!</p>";
+     ?>
+     <script>
+          alert("Insertion Failed... Some Fields are Blank....!!");
+          document.location="index.html";
+     </script>
+     <?php
       }
      mysqli_close($conn);
 }

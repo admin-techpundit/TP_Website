@@ -15,10 +15,20 @@ if(isset($_POST['submit']))
       //Insert Query of SQL
       $sql = "INSERT INTO get_quote (name,email,ph_no,pro_name,pro_description,domain,attachment) VALUES ('$name','$email','$mobile','$pro_name','$pro_des','$domain','$attachment')";
       mysqli_query($conn,$sql);
-      echo "<br/><br/><span>Data Inserted successfully...!!</span>";
+      ?>
+      <script>
+          alert("Data Inserted successfully...!!");
+          document.location="index.html";
+      </script>
+     <?php
       }
       else{
-      echo "<p>Insertion Failed <br/> Some Fields are Blank....!!</p>";
+     ?>
+     <script>
+          alert("Insertion Failed.. Some Fields are Blank....!!");
+          document.location="index.html";
+     </script>
+      <?php
       }
      mysqli_close($conn);
 }
